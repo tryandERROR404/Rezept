@@ -1,0 +1,45 @@
+# Python-Bytecode-Dateien
+__pycache__/
+*.py[cod]
+*.so
+
+# Log-Dateien
+*.log
+
+# Umgebung/Abhängigkeiten
+env/
+venv/
+ENV/
+.venv/
+.env/
+
+# IDEs/Editoren
+.vscode/
+.idea/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook Checkpoints
+*.ipynb_checkpoints/
+
+# Test-Ausgaben
+*.coverage
+*.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.tox/
+dist/
+build/
+*.egg-info/
+
+# Temporäre Dateien
+*.tmp
+*.swp
+*.bak
+*.old
+*.orig
