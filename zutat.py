@@ -1,5 +1,28 @@
+from enum import Enum
+
+class Category(Enum):
+    GEMUESEOBST = 1
+    EIER = 2
+    MILCHPRODUKTE = 3
+    FLEISCHWAREN = 4
+    BACKTRIEBMITTEL = 5
+    MEHL = 6
+    SAMEN = 7
+    GEWÜRZE = 8
+    WASSER = 9
+    OEl = 10
+    SUESS = 11
+    SONSTIGES = 12
+
+class Availability(Enum):
+    EINKAUFEN = 1
+    ZUHAUSE = 2
+    NASCHAUEN = 3
+    SPEZIALGESCHÄFT = 4
+    WEGLASSEN = 5
+
 class Zutat:
-    def __init__(self, name: str, menge: float, einheit: str, beschreibung: str = ""):
+    def __init__(self, name: str, menge: float, einheit: str, category: Category, beschreibung: str = ""):
         """
         Erstellt eine Zutat für ein Rezept.
         
@@ -11,6 +34,7 @@ class Zutat:
         self.name = name
         self.menge = menge
         self.einheit = einheit
+        self.category = category
         self.beschreibung = beschreibung
 
     def __str__(self):

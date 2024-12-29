@@ -1,4 +1,5 @@
 from zutat import Zutat
+from mealplanner import MealPlanner
 
 class Einkaufsliste:
     def __init__(self):
@@ -29,6 +30,9 @@ class Einkaufsliste:
             for zutat in rezept.zutaten:
                 self.add_zutat(zutat)
 
+    def gen_from_wochenplan(self, wp: MealPlanner):
+        
+                
     def anzeigen(self):
         """
         Gibt die Einkaufsliste sortiert nach Zutatenname aus.
